@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>marcvd</title>
-        <style>
+    <title>chess.js</title>
+    <style>
     	table#cjs_board {max-width: 90%; border-spacing: 0; float: left;}
     	table#cjs_board div {width: 64px; height: 64px; text-align: center; line-height: 64px; font-size: 64px; text-shadow: 1px 1px 2px black;}
     	tr td, tr:nth-child(2n) td:nth-child(2n) {background-color: #8f7952;}
     	tr td:nth-child(2n), tr:nth-child(2n) td {background-color: wheat;}
     	div#cjs_side {width: 10%; height: 100%; float: right;}
     	textarea#cjs_log {height: 512px;}
-    	
     </style>
     <style>
       html {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; font-weight: 400; background-color: #201c1b; color: #bebebe;}
@@ -32,9 +30,14 @@
     <script src="chess.js"></script>
   </head>
   <body>
+    <header>
+    	<h1>chess.js</h1>
+    </header>
     <table id="cjs_board">
     	<thead>
-    	<tr><th></th><th>H</th><th>G</th><th>F</th><th>E</th><th>D</th><th>C</th><th>B</th><th>A</th><th></th></tr>
+    	<tr>
+    		<th></th><th>H</th><th>G</th><th>F</th><th>E</th><th>D</th><th>C</th><th>B</th><th>A</th><th></th>
+    	</tr>
     	</thead>
     	<tbody>
     	<tr id="cjs_board_1" class="cjs_board_row">
@@ -140,8 +143,5 @@
     </table>
     <div id="cjs_side">
     	<textarea id="cjs_log"></textarea>
-    	<form>
-    		<input type="text" value="Enter the move of your friend!" />
-    	</form>
     </div>
 </body></html>
